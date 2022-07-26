@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="form_style.css">
+</head>
+<body>
+    <form id="form">
+        <h1>Registration</h1>
+        <div class="input-control">
+            <label for="first-name">Enter first name</label>
+            <input id="first-name" type="text" name="first-name" required>
+            <div class="error"></div>
+        </div>
+        <div class="input-control">
+            <label for="email">Enter Email ID</label>
+            <input id="email" type="email" name="email" required>
+            <div class="error"></div>
+        </div>
+        <div class="input-control">
+            <label for="phone_number">Enter phone number </label>
+            <input id="phone_number" type="number" name="phone_number" required>
+            <div class="error"></div>
+        </div>
+        <div class="input-control">
+            <label for="password">Enter password </label>
+            <input id="password" type="password" name="password" required>
+            <div class="error"></div>
+        </div>
+        <button type="submit" onClick="validations()">Submit</button>
+    </form>
+</body>
+</html>
