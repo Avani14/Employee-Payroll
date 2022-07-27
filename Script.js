@@ -5,6 +5,10 @@ const formDetails = () => {
   var dept = document.querySelector('input[type=checkbox][name=dept]:checked').value;
   var salary = document.getElementById("salary").value;
   var date = document.getElementById("start_date").value;
+  const regex = RegExp("^[A-Z]{1}[a-z]*$");
+  if (name == "" || !regex.test(name)) {
+    window.alert("Please enter valid name");
+  }
   let empObj = {
     fname: fname,
     gender: gender,
