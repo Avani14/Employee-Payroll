@@ -11,9 +11,10 @@
 0,200;0,300;0,400;0,600;1,500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600
 &display=swap" rel="stylesheet">
+<script src="Script.js"></script>
 </head>
 
-<body>
+<body onload="displayData()">
     <header class="header-content header">
         <div class="logo-content">
             <img src="images/logo.png" alt="">
@@ -30,7 +31,7 @@
     <div class="main-content">
         <div class="header-content">
             <div class="emp-detail-text">
-                Employee Details <div class="emp-count">10</div>
+                Employee Details <div class="emp-count" id="emp_count"></div>
             </div>
             <a href="new_emp_payroll.html" class="add-button">
                 <img src="images/add-24px.svg" alt="">
@@ -47,20 +48,6 @@
             <th>Salary</th>
             <th>Start Date</th>
             <th>Actions</th>
-        </tr>
-        <tr>
-            <td>
-                <img class="profile" src="images/Ellipse -1.png" alt="">
-            </td>
-            <td>Avani Trivedi</td>
-            <td>Female</td>
-            <td> <div class="dept-label">
-                IT
-            </div> </td>
-            <td>500000</td>
-            <td>19 April 2021</td>
-            <td><img id = "1" src="images/delete-black-18dp.svg" alt="delete" onclick="remove(this)">
-                <img id = "1" src="images/create-black-18dp.svg" alt="update" onclick="update(this)"></td>
         </tr>
     </table>
 </body>

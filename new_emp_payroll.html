@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="form_style.css">
+    <script src="Script.js"></script>
 </head>
+
 <body>
     <form id="form">
         <h1>Registration</h1>
@@ -14,23 +17,57 @@
             <label for="first-name">Enter first name</label>
             <input id="first-name" type="text" name="first-name" required>
             <div class="error"></div>
-        </div>
-        <div class="input-control">
-            <label for="email">Enter Email ID</label>
-            <input id="email" type="email" name="email" required>
-            <div class="error"></div>
-        </div>
-        <div class="input-control">
-            <label for="phone_number">Enter phone number </label>
-            <input id="phone_number" type="number" name="phone_number" required>
-            <div class="error"></div>
-        </div>
-        <div class="input-control">
-            <label for="password">Enter password </label>
-            <input id="password" type="password" name="password" required>
-            <div class="error"></div>
-        </div>
-        <button type="submit" onClick="validations()">Submit</button>
+        </div><br>
+        <div class="input-fields">
+            <label for="gender">Select your gender</label><br><br>
+            <input type="radio" value="Female" id="Female" name="gender">
+            <label for="gender">Female</label>
+            <input type="radio" value="Male" id="Male" name="gender">
+            <label for="male">Male</label>
+        </div>  
+        <br>
+        <div class="input-fields">
+            <label for="profile">Add Profile Photo</label>
+            <div class="avatar">
+                <input type="radio" id="profile" name="avatar" value="images/avatar2.png">
+                <img id="image" src="images/avatar2.png"  >
+                <input type="radio" id="profile" name="avatar" value="images/avatar5.png">
+                <img id="image" src="images/avatar5.png" >
+                <input type="radio" id="profile" name="avatar" value = "images/avatar6.png">
+                <img id="image" src="images/avatar6.png" >
+                <input type="radio" id="profile" name="avatar"  value = "images/img_avatar.png">
+                <img id="image" src="images/img_avatar.png"> 
+                <input type="radio" id="profile" name="avatar" value ="images/img_avatar.png" >
+                <img id="image" src="images/img_avatar2.png" >
+            </div><br>
+            <div class="input-control">
+                <label for="department">Enter department</label>
+                <div class="dept">
+                    <input type="checkbox" id = "dept" value="HR" name="dept">
+                    <label for="dept">HR</label>
+                    <input type="checkbox" id = "dept" value="IT" name="dept">
+                    <label for="dept">IT</label>
+                    <input type="checkbox" id = "dept" value="Sales" name="dept">
+                    <label for="dept">Sales</label>
+                    <input type="checkbox" id = "dept" value="Finance" name="dept">
+                    <label for="dept">Finance</label>
+                    <input type="checkbox" id = "dept" value="Other" name="dept">
+                    <label for="dept">Other</label>
+                </div>
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="salary">Enter salary </label>
+                <input id="salary" type="number" name="salary" required>
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="start_date">Enter start date </label>
+                <input id="start_date" type="date" name="start_date" required>
+                <div class="error"></div>
+            </div>
+            <button type="submit" onclick="formDetails()">Submit</button>
     </form>
 </body>
+
 </html>

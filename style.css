@@ -138,3 +138,11 @@ td img{
     font-weight: 300;
     margin-bottom: 8px;
 }
+.avatar {
+    vertical-align: middle;
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    padding-top: 4px;
+    border-radius: 40px;
+}
