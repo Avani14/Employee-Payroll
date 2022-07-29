@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <form id="form">
+    <form id="form" onsubmit="formDetails();window.open('Home.html')">
         <h1>Registration</h1>
         <div class="input-control">
             <label for="first-name">Enter first name</label>
@@ -66,7 +66,7 @@
                 <input id="start_date" type="date" name="start_date" required>
                 <div class="error"></div>
             </div>
-            <button type="submit" onclick="formDetails()">Submit</button>
+            <button type="submit">Submit</button>
     </form>
 </body>
 
