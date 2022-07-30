@@ -50,6 +50,69 @@
             <th>Actions</th>
         </tr>
     </table>
+    <div id="abc">
+        <button onclick="div_hide()">Close</button>
+    <div id="popupContact">
+        <form id="edit_form" name="edit_form" onsubmit="onEditSubmit();window.open('Home.html')">
+            <h1>Registration</h1>
+            
+            <div class="input-control">
+                <label for="first-name">Enter first name</label>
+                <input readonly id="first-name" type="text" name="first-name">
+                <div class="error"></div>
+            </div><br>
+            <div class="input-fields">
+                <label for="gender">Select your gender</label><br><br>
+                <input type="radio" value="Female" id="Female" name="gender">
+                <label for="gender">Female</label>
+                <input  type="radio" value="Male" id="Male" name="gender">
+                <label for="male">Male</label>
+            </div>  
+            <br>
+            <div class="input-fields">
+                <label for="profile">Add Profile Photo</label>
+                <div class="avatar">
+                    <input type="radio" id="profile" name="avatar" value="images/avatar2.png">
+                    <img id="image" src="images/avatar2.png"  >
+                    <input type="radio" id="profile" name="avatar" value="images/avatar5.png">
+                    <img id="image" src="images/avatar5.png" >
+                    <input type="radio" id="profile" name="avatar" value = "images/avatar6.png">
+                    <img id="image" src="images/avatar6.png" >
+                    <input type="radio" id="profile" name="avatar"  value = "images/img_avatar.png">
+                    <img id="image" src="images/img_avatar.png"> 
+                    <input type="radio" id="profile" name="avatar" value ="images/img_avatar2.png" >
+                    <img id="image" src="images/img_avatar2.png" >
+                </div><br>
+                <div class="input-control">
+                    <label for="department">Enter department</label>
+                    <div class="dept">
+                        <input type="checkbox" id = "dept" value="HR" name="dept">
+                        <label for="dept">HR</label>
+                        <input type="checkbox" id = "dept" value="IT" name="dept">
+                        <label for="dept">IT</label>
+                        <input type="checkbox" id = "dept" value="Sales" name="dept">
+                        <label for="dept">Sales</label>
+                        <input type="checkbox" id = "dept" value="Finance" name="dept">
+                        <label for="dept">Finance</label>
+                        <input type="checkbox" id = "dept" value="Other" name="dept">
+                        <label for="dept">Other</label>
+                    </div>
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="salary">Enter salary </label>
+                    <input id="salary" type="number" name="salary" required>
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="start_date">Enter start date </label>
+                    <input id="start_date" type="date" name="start_date" required>
+                    <div class="error"></div>
+                </div>
+                <button type="submit">Submit</button>
+        </form>
+        </div>
+    </div>
 </body>
 
 </html>
